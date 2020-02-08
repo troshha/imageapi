@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="imageApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./app.styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="app/image-list/image-list.module.js"></script>
+    <script src="app/image-list/image-list.component.js"></script>
+    <script src="app/image-detail/image-detail.module.js"></script>
+    <script src="app/image-detail/image-detail.component.js"></script>
+    <script src="app/liked-image/liked-image.module.js"></script>
+    <script src="app/liked-image/liked-image.component.js"></script>
+    <script src="app/navbar/navbar.module.js"></script>
+    <script src="app/navbar/navbar.component.js"></script>
+    <title>MotoCMS TEST</title>
+  </head>
+  <body>
+    <navbar></navbar>
+    <div ng-view></div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!-- <p>{{$ctrl.limit}}</p> -->
+
+<div class="container">
+  <p>
+    Select images per page:
+    <select ng-model="$ctrl.limit">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+    </select>
+    <button ng-click="$ctrl.changeImgCount($ctrl.limit)">Select</button>
+  </p>
+  <div class="image-grid">
+    <div ng-repeat="image in $ctrl.images " class="image-grid__item">
+      <a href="#!/images/{{image.id}}/info">
+        <img ng-src="{{image.download_url}}" alt="" />
+      </a>
+      <i class="fa fa-heart fa-3x" ng-click="$ctrl.likeImage(image)"></i>
+    </div>
+  </div>
+  <div class="page-buttons">
+    <button ng-click="$ctrl.prevPage()" ng-disabled="$ctrl.curPage <= 1">
+      Prev
+    </button>
+    <button disabled>{{$ctrl.curPage}}</button>
+    <button ng-click="$ctrl.nextPage()">Next</button>
+  </div>
+</div>

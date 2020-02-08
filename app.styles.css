@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+img {
+  width: 100%;
+  /* display: block; */
+}
+
+header {
+  min-width: 10vh;
+  background: #000;
+  color: white;
+}
+
+header a {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-grid,
+.liked-image__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-top: 2rem;
+  place-items: center;
+}
+
+.image-grid__item {
+  position: relative;
+}
+
+i.fa-heart {
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.page-buttons {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button,
+select {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+
+  line-height: 1.25;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  outline: 0;
+}
+
+.page-buttons button:disabled {
+  cursor: default;
+}
+
+button:hover {
+  background-color: #ddd;
+}

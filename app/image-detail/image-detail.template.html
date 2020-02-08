@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="image-detail">
+    <h1>Author: {{$ctrl.image.author}}</h1>
+    <p>Width: {{$ctrl.image.width}}px Height: {{$ctrl.image.height}}px</p>
+    <a ng-href="{{$ctrl.image.url}}">Image URL</a>
+    <img ng-src="{{$ctrl.image.download_url}}" alt="" />
+  </div>
+</div>

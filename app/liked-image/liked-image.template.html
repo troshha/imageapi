@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Liked Images</h1>
+  <button ng-click="$ctrl.clearStorage()">Clear Storage</button>
+  <h1 ng-hide="$ctrl.likedImages.length > 0">
+    There are no liked images yet.
+  </h1>
+  <div class="liked-image__grid">
+    <div
+      class="liked-image__item"
+      ng-repeat="image in $ctrl.likedImages track by image.id"
+    >
+      <img ng-src="{{image.download_url}}" alt="" />
+    </div>
+  </div>
+</div>
